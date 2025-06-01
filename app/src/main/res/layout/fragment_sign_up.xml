@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <View
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_150sdp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text=" Sign up  "
+            android:textStyle="bold"
+            android:textSize="@dimen/_25sdp" />
+
+
+        <EditText
+            android:id="@+id/nameFiled"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/input_field"
+            android:hint="Enter your name"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9a9c9d"
+            android:textSize="@dimen/_20sdp"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/Email_No"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/input_field"
+            android:hint="Enter the Email"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9a9c9d"
+            android:textSize="@dimen/_20sdp"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/Password_No"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/input_field"
+            android:hint="Enter the Password"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="#9a9c9d"
+            android:textSize="@dimen/_20sdp"
+
+            />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/SignUp_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+
+
+            android:text="SignUp"
+            android:textColor="@color/black" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
